@@ -3,8 +3,8 @@
 -- Author: sylphrena@hoshiboshi.uk
 --
 -- Exposed options under 'config.plugins.selection_highlight':
--- * marker_color  (default: accent color)
--- * inline_color  (default: 0x55 opacity marker_color)
+-- * marker_color  (default: accent color)              - Color used on the scrollbar
+-- * inline_color  (default: 0x55 opacity marker_color) - Color used in the DocView
 -- * marker_height (default: 4)
 
 local style   = require "core.style"
