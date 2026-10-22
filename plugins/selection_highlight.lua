@@ -127,7 +127,7 @@ end
 -- Inline highlighting.
 local original_draw_line_body = DocView.draw_line_body
 function DocView:draw_line_body (line_index, x, y)
-	local line_height = original_draw_line_body (self, line_index, x, y)
+	local line_height = original_draw_line_body (self, line_index, x, y) or self:get_line_height ()
 
 	local search_cache = get_selection_search_cache (self)
 	if not search_cache then
